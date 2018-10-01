@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
-		<header class="page-header">
-			<!--Про другие ссылки подумал, но так как задание верстать мобильную версию -- сверстал без них-->
-			<a href="index.html" class="page-header__logo">
-				<img src="http://placehold.it/150x100" alt="Mishka" width="86px" height="35px" class="page-header__logo-image">
-			</a>
-				<nav class="main-nav">
-					<button class="main-nav__toggle"></button>	
-					<ul class="site-list main-nav__list">
-						<li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-						<li class="site-list__item"><a href="#">Вязание на заказ</a></li>
-					</ul>
-					<ul class="user-list main-nav__list">
-						<li class="user-list__item"><a href="#">Поиск по сайту</a></li>
-						<li class="user-list__item"><a href="#">Корзина:пока пуста</a></li>
-					</ul>
-				</nav>
-		</header>
-		<main class="page-main">
-			<h1 class="page-main__title">«Мишка» – магазин изделий ручной работы</h1>
-			<section class="catalog-products">
-				<ul class="catalog-products catalog-list">
-					<li class="catalog-list__item catalog-list__item--bunny">
-						<a href="catalog-list__picture">
-							<img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
-						</a>
-						<div class="catalog-list__title-wrapper">
-							<h2 class="catalog-list__title">Зайчик-попрыгайчик</h2>
-							<p class="catalog-list__description">Рост 30 см, вес 200 г</p>
-						</div>
-						<p class="catalog-list__price">1200 руб.</p>
-					</li>
-					<li class="catalog-list__item catalog-list__item--bunny">
-						<a href="catalog-list__picture">
-							<img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
-						</a>
-						<div class="catalog-list__title-wrapper">
-							<h2 class="catalog-list__title">Корзинка для белья</h2>
-							<p class="catalog-list__description">Рост 15 см, высота 10 см</p>
-						</div>
-						<p class="catalog-list__price">690 руб.</p>
-					</li>
-					<li class="catalog-list__item catalog-list__item--bunny">
-						<a href="catalog-list__picture">
-							<img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
-						</a>
-						<div class="catalog-list__title-wrapper">
-							<h2 class="catalog-list__title">Зайчик-попрыгайчик</h2>
-							<p class="catalog-list__description">Рост 30 см, вес 30 см</p>
-						</div>
-						<p class="catalog-list__price">1500 руб.</p>
-					</li>
-				</ul>
-			</section>
-			<article class="advertising">
-				<h2 class="advertising-title">Процесс производства</h2>
-				<div class="advertising-video">
-					<img src="http://placehold.it/150x100" alt="Производство корзинки" class="advertising__picture">	
-					<a href="#" class="advertising__play">
-						<img src="http://placehold.it/150x100" alt="Воспроизведение видео" >
-					</a>
-				</div>
-				<p class="advertising-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-				<a href="" class="button button--advertising">Сделать заказ</a>
-			</article>
-			<footer class="page-footer">
-<!--Про логотип подумал, но так как задание верстать мобильную версию -- сверстал без него-->
-				<ul class="page-footer--social social-list">
-					<li class="social-list__item social-list__item--inst">
-						<a href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграмм"></a>
-					</li>
-					<li class="social-list__item social-list__item--fb">
-						<a href="https://www.facebook.com/htmlacademy" aria-label="Наш фейсбук"></a>
-					</li>
-					<li class="social-list__item  social-list__item--tw">
-						<a href="#" aria-label="Наш твиттер"></a>
-					</li>
-				</ul>
-				<div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-						<b>Разработано:</b>
-					</a>
+<head>
+<meta charset="utf-8">
+<title>HTML Academy: Мишка</title>
+</head>
+<body>
+<header class="page-header"> 
+  <!--Про другие ссылки подумал, но так как задание верстать мобильную версию -- сверстал без них--> 
+  <a href="index.html" class="page-header__logo"> <img src="http://placehold.it/150x100" alt="Mishka" width="86px" height="35px" class="page-header__logo-image"> </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle"></button>
+    <ul class="site-list main-nav__list">
+      <li class="site-list__item">
+        <a href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="site-list__item">
+        <a href="#">Вязание на заказ</a>
+      </li>
+    </ul>
+    <ul class="user-list main-nav__list">
+      <li class="user-list__item">
+        <a href="#">Поиск по сайту</a>
+      </li>
+      <li class="user-list__item">
+        <a href="#">Корзина:пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-main">
+  <h1 class="page-main__title">«Мишка» – магазин изделий ручной работы</h1>
+  <section class="catalog-products">
+    <ul class="catalog-products catalog-list">
+      <li class="catalog-list__item catalog-list__item--bunny">
+        <a href="catalog-list__picture">
+          <img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
+        </a>
+        <div class="catalog-list__title-wrapper">
+          <h2 class="catalog-list__title">Зайчик-попрыгайчик</h2>
+          <p class="catalog-list__description">Рост 30 см, вес 200 г</p>
         </div>
-			</footer>
-			</main>
-  </body>
+        <p class="catalog-list__price">1200 руб.</p>
+      </li>
+      <li class="catalog-list__item catalog-list__item--bunny">
+        <a href="catalog-list__picture">
+          <img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
+        </a>
+        <div class="catalog-list__title-wrapper">
+          <h2 class="catalog-list__title">Корзинка для белья</h2>
+          <p class="catalog-list__description">Рост 15 см, высота 10 см</p>
+        </div>
+        <p class="catalog-list__price">690 руб.</p>
+      </li>
+      <li class="catalog-list__item catalog-list__item--bunny">
+        <a href="catalog-list__picture">
+          <img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
+        </a>
+        <div class="catalog-list__title-wrapper">
+          <h2 class="catalog-list__title">Зайчик-попрыгайчик</h2>
+          <p class="catalog-list__description">Рост 30 см, вес 30 см</p>
+        </div>
+        <p class="catalog-list__price">1500 руб.</p>
+      </li>
+    </ul>
+  </section>
+  <article class="advertising">
+    <h2 class="advertising-title">Процесс производства</h2>
+    <div class="advertising-video">
+      <img src="http://placehold.it/150x100" alt="Производство корзинки" class="advertising__picture">
+      <a href="#" class="advertising__play">
+      <img src="http://placehold.it/150x100" alt="Воспроизведение видео">
+      </a>
+    </div>
+    <p class="advertising-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    <a href="" class="button button--advertising">Сделать заказ</a>
+  </article>
+  <footer class="page-footer"> 
+    <!--Про логотип подумал, но так как задание верстать мобильную версию -- сверстал без него-->
+    <ul class="page-footer--social social-list">
+      <li class="social-list__item social-list__item--inst">
+        <a href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграмм"></a>
+      </li>
+      <li class="social-list__item social-list__item--fb">
+        <a href="https://www.facebook.com/htmlacademy" aria-label="Наш фейсбук"></a>
+      </li>
+      <li class="social-list__item  social-list__item--tw">
+        <a href="#" aria-label="Наш твиттер"></a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <b>Разработано:</b>
+      </a>
+    </div>
+  </footer>
+</main>
+</body>
 </html>
