@@ -29,65 +29,63 @@
       </li>
     </ul>
   </nav>
+  <h1 class="page-header__title">«Мишка» – магазин изделий ручной работы</h1>
 </header>
-<main class="page-main">
-  <h1 class="page-main__title">«Мишка» – магазин изделий ручной работы</h1>
-  <section class="catalog-products">
-    <ul class="catalog-products catalog-list">
-      <li class="catalog-list__item catalog-list__item--bunny">
-        <a href="catalog-list__picture">
+<main class="catalog">
+  <section class="catalog-items">
+      <article class="catalog-item catalog-item--bunny">
+        <a href="catalog-item__picture">
           <img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
         </a>
-        <div class="catalog-list__title-wrapper">
-          <h2 class="catalog-list__title">Зайчик-попрыгайчик</h2>
-          <p class="catalog-list__description">Рост 30 см, вес 200 г</p>
+        <div class="catalog-item__info">
+          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
         </div>
-        <p class="catalog-list__price">1200 руб.</p>
-      </li>
-      <li class="catalog-list__item catalog-list__item--bunny">
-        <a href="catalog-list__picture">
-          <img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
+        <p class="catalog-item__price">1200 руб.</p>
+      </article>
+      <article class="catalog-item catalog-item--basket">
+        <a href="catalog-item__picture">
+          <img src="http://placehold.it/150x100" alt="корзинка для белья" width="260px" height="195px">
         </a>
-        <div class="catalog-list__title-wrapper">
-          <h2 class="catalog-list__title">Корзинка для белья</h2>
-          <p class="catalog-list__description">Рост 15 см, высота 10 см</p>
+        <div class="catalog-item__info">
+          <h2 class="catalog-item__title">Корзинка для белья</h2>
+          <p class="catalog-item__description">Рост 15 см, высота 10 см</p>
         </div>
-        <p class="catalog-list__price">690 руб.</p>
-      </li>
-      <li class="catalog-list__item catalog-list__item--bunny">
-        <a href="catalog-list__picture">
-          <img src="http://placehold.it/150x100" alt="зайчик попрыгайчик" width="260px" height="195px">
+        <p class="catalog-item__price">690 руб.</p>
+      </article>
+      <article class="catalog-item catalog-item--big-basket">
+        <a href="catalog-item__picture">
+          <img src="http://placeholl.d.it/150x100" alt="большая корзинка для белья" width="260px" height="195px">
         </a>
-        <div class="catalog-list__title-wrapper">
-          <h2 class="catalog-list__title">Зайчик-попрыгайчик</h2>
-          <p class="catalog-list__description">Рост 30 см, вес 30 см</p>
+        <div class="catalog-item__info">
+          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          <p class="catalog-item__description">Рост 30 см, вес 30 см</p>
         </div>
-        <p class="catalog-list__price">1500 руб.</p>
-      </li>
-    </ul>
+        <p class="catalog-item__price">1500 руб.</p>
+      </article>
   </section>
   <article class="advertising">
-    <h2 class="advertising-title">Процесс производства</h2>
-    <div class="advertising-video">
+    <h2 class="advertising__title">Процесс производства</h2>
+    <div class="advertising__video">
       <img src="http://placehold.it/150x100" alt="Производство корзинки" class="advertising__picture">
       <a href="#" class="advertising__play">
       <img src="http://placehold.it/150x100" alt="Воспроизведение видео">
       </a>
     </div>
-    <p class="advertising-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    <p class="advertising__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
     <a href="" class="button button--advertising">Сделать заказ</a>
   </article>
-  <footer class="page-footer">
+ <footer class="page-footer">
     <!--Про логотип подумал, но так как задание верстать мобильную версию -- сверстал без него-->
-    <ul class="page-footer--social social-list">
-      <li class="social-list__item social-list__item--inst">
-        <a href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграмм"></a>
+    <ul class="page-footer__social social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграмм"></a>
       </li>
-      <li class="social-list__item social-list__item--fb">
-        <a href="https://www.facebook.com/htmlacademy" aria-label="Наш фейсбук"></a>
+      <li class="social-list__item">
+        <a class="social-list__item social-list__item--fb" href="https://www.facebook.com/htmlacademy" aria-label="Наш фейсбук"></a>
       </li>
-      <li class="social-list__item  social-list__item--tw">
-        <a href="#" aria-label="Наш твиттер"></a>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--tw" href="#" aria-label="Наш твиттер"></a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
