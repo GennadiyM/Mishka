@@ -10,7 +10,7 @@
   <a class="page-header__logo"> <img src="http://placehold.it/150x100" alt="Mishka" width="86px" height="35px" class="page-header__logo-image"> </a>
   <nav class="main-nav">
     <button class="main-nav__toggle"></button>
-    <ul class="site-list main-nav__list">
+    <ul class="site-list">
       <li class="site-list__item">
         <a href="catalog.html">Каталог товаров</a>
       </li>
@@ -18,22 +18,12 @@
         <a href="form.html">Вязание на заказ</a>
       </li>
     </ul>
-<!--<ul class="user-list main-nav__list">
-  <li class="user-list__search">
-    <a  class="user-list__search-link" href="#">Поиск по сайту</a>
-  </li>
-  <li class="user-list__cart">
-    <a class="user-list__cart-link" href="#">Корзина:<span class="user-list__cart-state">пока пуста</span></a>
-  </li>
-</ul>-->
-    <ul class="user-list__search">
-      <li class="user-list__search-link">
-        <a href="#">Поиск по сайту</a>
+    <ul class="user-list">
+      <li class="user-list__search">
+        <a  class="user-list__search-link" href="#">Поиск по сайту</a>
       </li>
-    </ul>
-    <ul class="user-list__cart">
-      <li class="user-list__cart-link">
-          <a href="#">Корзина:<span class="user-list__cart-state">пока пуста</span></a>
+      <li class="user-list__cart">
+        <a class="user-list__cart-link" href="#">Корзина:<span class="user-list__cart-state">пока пуста</span></a>
       </li>
     </ul>
   </nav>
@@ -41,16 +31,16 @@
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">«Мишка» – магазин изделий ручной работы</h1>
-  <section class="offers">
-    <ul class="offers__list catalog-list">
-      <li class="catalog-list__item catalog-list__item--icon-lump">
+  <div class="offers">
+    <ul class="offers__list">
+      <li class="offers__item offers__item--icon-lump">
         <a href="">Предметы интерьера</a>
       </li>
-      <li class="catalog-list__item catalog-list__item--icon-lego">
+      <li class="offers__item offers__item--icon-lego">
         <a href="">Детские игрушки</a>
       </li>
     </ul>
-  </section>
+  </div>
   <article class="top-product">
     <h2 class="top-product__title">Вязанные корзинки</h2>
     <p class="top-product__label">Товар недели</p>
@@ -95,7 +85,7 @@
       <a href="write-comments.html" class="button button--reviews">Написать</a> </article>
   </section>
   <section class="contacts">
-    <div class="contacts-wrapper">
+    <div class="contacts__wrapper">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts-characteristics">
         <tr>
@@ -113,7 +103,6 @@
       <a href="write-us.html" class="button button--map-and-contacts">Написать</a> </div>
   </section>
   <footer class="page-footer">
-    <!--Про логотип подумал, но так как задание верстать мобильную версию -- сверстал без него-->
     <ul class="page-footer__social social-list">
       <li class="social-list__item">
         <a class="social-list__link social-list__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграмм"></a>
