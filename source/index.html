@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
-  </body>
+<head>
+<meta charset="utf-8">
+<title>HTML Academy: Мишка</title>
+</head>
+<body>
+<header class="page-header">
+  <!--Про другие ссылки подумал, но так как задание верстать мобильную версию -- сверстал без них-->
+  <a class="page-header__logo"> <img src="http://placehold.it/150x100" alt="Mishka" width="86px" height="35px" class="page-header__logo-image"> </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle"></button>
+    <ul class="site-list">
+      <li class="site-list__item">
+        <a href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="site-list__item">
+        <a href="form.html">Вязание на заказ</a>
+      </li>
+    </ul>
+    <ul class="user-list">
+      <li class="user-list__search">
+        <a  class="user-list__search-link" href="#">Поиск по сайту</a>
+      </li>
+      <li class="user-list__cart">
+        <a class="user-list__cart-link" href="#">Корзина:<span class="user-list__cart-state">пока пуста</span></a>
+      </li>
+    </ul>
+  </nav>
+  <h2 class="page-header__title">Милые штуки ручной работы для дома</h2>
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden">«Мишка» – магазин изделий ручной работы</h1>
+  <div class="offers">
+    <ul class="offers__list">
+      <li class="offers__item offers__item--icon-lump">
+        <a href="">Предметы интерьера</a>
+      </li>
+      <li class="offers__item offers__item--icon-lego">
+        <a href="">Детские игрушки</a>
+      </li>
+    </ul>
+  </div>
+  <article class="top-product">
+    <h2 class="top-product__title">Вязанные корзинки</h2>
+    <p class="top-product__label">Товар недели</p>
+    <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+    <table class="top-product__properties">
+      <tr>
+        <th class="top-product__properties-name">Цвет</th>
+        <td class="top-product__properties-descript">«Тиффани»/серый</td>
+      </tr>
+      <tr>
+        <th class="top-product__properties-name">Диаметр</th>
+        <td class="top-product__properties-descript">25 см</td>
+      </tr>
+      <tr>
+        <th class="top-product__properties-name">Высота</th>
+        <td class="top-product__properties-descript">15 см</td>
+      </tr>
+    </table>
+    <img src="http://placehold.it/150x100" alt="Вязанные корзинки" class="product-image" width="260px" height="315px">
+    <p class="top-product__price">Цена: 990 руб.</p>
+    <a href="" class="button top-product__button">Заказать</a>
+  </article>
+  <section class="about-us">
+    <h2 class="about-us__title">Коротко о нас:</h2>
+    <ul class="about-us__list">
+      <li class="about-us__item about-us__item--ecology">Экологически чистые материалы</li>
+      <li class="about-us__item about-us__item--scandinavian">Скандинавский стиль по российской цене</li>
+      <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
+      <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
+      <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
+      <li class="about-us__item about-us__item--pack">Поставляется в подарочной упаковке</li>
+    </ul>
+    <article class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <blockquote class="reviews__quote">
+        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <cite class="reviews__author">Анастасия Красильникова</cite>
+        <p class="reviews__author-email">@misssssiskras</p>
+      </blockquote>
+      <button class="reviews__button reviews__button--left">Предыдущий</button>
+      <button class="reviews__button reviews__button--right">Следующий</button>
+      <a href="write-comments.html" class="button button--reviews">Написать</a> </article>
+  </section>
+  <section class="contacts">
+    <div class="contacts__wrapper">
+      <h2 class="contacts__title">Контакты</h2>
+      <table class="contacts-characteristics">
+        <tr>
+          <th class="contacts-characteristics__name">e-mail:</th>
+          <td class="contacts-characteristics__descript">info@mimimishkashop.ru</td>
+        </tr>
+        <tr>
+          <th class="contacts-characteristics__name">адрес:</th>
+          <td class="contacts-characteristics__descript">г. Санкт-Петербург<br>
+            ул. Большая Конюшенная,<br>
+            д. 19/8, офис 101</td>
+        </tr>
+      </table>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2030fe50164dec3a49a67a5e2e929a7b5b382fdeacc5cae9f6b69cf6cc5039b0&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;scroll=true"></script>
+      <a href="write-us.html" class="button button--map-and-contacts">Написать</a> </div>
+  </section>
+  <footer class="page-footer">
+    <ul class="page-footer__social social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграмм"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__item social-list__item--fb" href="https://www.facebook.com/htmlacademy" aria-label="Наш фейсбук"></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--tw" href="#" aria-label="Наш твиттер"></a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <b>Разработано:</b>
+      </a>
+    </div>
+  </footer>
+</main>
+</body>
 </html>
