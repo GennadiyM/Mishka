@@ -1,0 +1,102 @@
+.form {
+  padding-top: 28px;
+  padding-bottom: 55px;
+}
+
+.form__description {
+  .style-reset;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.form__type {
+  .style-reset;
+  border: none;
+}
+
+.form__title {
+  font-ize: 17px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form__label {
+  .style-reset;
+  font-ize: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.form__buyer-name,
+.form__buyer-firstname,
+.form__buyer-lastname,
+.form__tel,
+.form__email {
+  .style-reset;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 15px;
+  outline: none;
+  font-size: 17px;
+  line-height: 18px;
+  transition: border 0.1s;
+}
+
+.form__buyer-name::placeholder,
+.form__buyer-firstname::placeholder,
+.form__buyer-lastname::placeholder,
+.form__tel::placeholder,
+.form__email::placeholder,
+.form__textarea::placeholder {
+  opacity: 0.3;
+  font-size: 17px;
+  line-height: 18px;
+  transition: opacity 0.2s;
+}
+
+.form__textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid black;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form__buyer-name:hover,
+.form__buyer-firstname:hover,
+.form__buyer-lastname:hover,
+.form__tel:hover,
+.form__email:hover,
+.form__textarea:hover {
+  border-color: #62d1ba;
+}
+
+.form__buyer-name:focus,
+.form__buyer-firstname:focus,
+.form__buyer-lastname:focus,
+.form__tel:focus,
+.form__email:focus,
+.form__textarea:focus {
+  border-color: #62d1ba;
+}
+
+.form__buyer-name:focus::placeholder,
+.form__buyer-firstname:focus::placeholder,
+.form__buyer-lastname:focus::placeholder,
+.form__tel:focus::placeholder,
+.form__email:focus::placeholder,
+.form__textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.form__note {
+  .style-reset;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
