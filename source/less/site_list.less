@@ -1,0 +1,33 @@
+.site-list {
+  .default-list;
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 79px;
+  border-top: 1px solid #ececec;
+  padding-left: 75px;
+  padding-right: 30px;
+  a {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  transition: opacity 0.2s;
+  .zeroing;
+  padding: 10px;
+  outline: none;
+  }
+}
+
+.site-list__item:hover a     {
+  opacity: 0.6;
+}
+.site-list__item a:focus {
+  opacity: 0.6;
+}
+.site-list__item:active a {
+  opacity: 0.3;
+}
