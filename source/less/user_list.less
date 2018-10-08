@@ -1,8 +1,9 @@
-.user-list{
+.user-list {
   .default-list;
 }
+
 .user-list__search,
-.user-list__cart{
+.user-list__cart {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -10,16 +11,19 @@
   border-top: 1px solid #ececec;
   padding-right: 30px;
   padding-left: 30px;
-  svg {
-    margin-right: 26px;
-    opacity: 0.2;
-  }
 }
+
+svg {
+  margin-right: 26px;
+  opacity: 0.2;
+}
+
 .user-list__cart {
   border-bottom: 1px solid #ececec;
 }
+
 .user-list__search-link,
-.user-list__cart-link{
+.user-list__cart-link {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -29,29 +33,34 @@
   padding: 10px;
   outline: none;
 }
+
 .user-list__search:hover .user-list__search-link,
 .user-list__search-link:focus,
 .user-list__cart:hover .user-list__cart-link,
-.user-list__cart-link:focus{
+.user-list__cart-link:focus {
   opacity: 0.6;
 }
+
 .user-list__search:active .user-list__search-link,
-.user-list__cart:active .user-list__cart-link{
+.user-list__cart:active .user-list__cart-link {
   opacity: 0.3;
 }
+
 .user-list__search:hover svg,
 .user-list__search-link:focus svg,
 .user-list__cart:hover svg,
-.user-list__cart-link:focus svg{
+.user-list__cart-link:focus svg {
   opacity: 1;
 }
+
 .user-list__search:hover path,
 .user-list__search-link:focus path,
 .user-list__cart:hover path,
-.user-list__cart-link:focus path{
+.user-list__cart-link:focus path {
   fill: #63d1bb;
 }
+
 .user-list__search:active path,
-.user-list__cart:active path{
+.user-list__cart:active path {
   fill: #63d1bb;
 }
