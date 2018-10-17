@@ -1,8 +1,37 @@
 .main-nav {
-  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__toggle {
+  position: absolute;
+  right: 30px;
+  top: -51px;
+  display: block;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/icon-menu-close.svg");
+  background-color: #ffffff;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::after {
+  content: "";
+  top: -47px;
+  display: block;
   width: 20px;
   height: 14px;
   background-image: url("../img/icon-menu-open.svg");
@@ -10,10 +39,27 @@
   border: none;
 }
 
-.main-nav__toogle--active {
-  width: 21px;
-  height: 20px;
-  background-image: url("../img/icon-menu-close.svg");
-  background-color: #ffffff;
-  border: none;
+.main-nav--closed .site-list {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+  
+  .main-nav {
+    order: 3;
+    width: 348px;
+    background: transparent;
+    min-height: 88px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    order: 0;
+    width: 410px;
+  }
 }

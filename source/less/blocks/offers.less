@@ -1,49 +1,142 @@
 .offers__list {
   .default-list;
-  width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #63d1bb;
 }
 
 .offers__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   min-height: 103px;
+  padding-top: 20px;
   padding-left: 30px;
   padding-right: 27px;
-}
-
-.offers__item a {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #ffffff;
-  padding-right: 30px;
+  transition: all 0.2s;
+  &:hover{
+    min-height: 108px;
+    margin-top: -5px;
+  }
+  a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    transition: opacity 0.2s;
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .offers__item--icon-lump {
   background-color: #63d1bb;
+  a {
+    min-height: 62px;
+    padding-right: 55px;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 0;
+      width: 60px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+    }
+  }
 }
 
 .offers__item--icon-lego {
   background-color: #56c3b2;
+  a {
+    min-height: 60px;
+    padding-right: 95px;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 0;
+      width: 60px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+    }
+  }
 }
 
-.offers__icon-lump {
-  display: inline-block;
-  width: 60px;
-  height: 62px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
+@media (min-width: @tablet-width) {
+  .offers__list {
+    z-index: 2;
+    min-width: 668px;
+    max-width: 875px;
+    width: 668px/@tablet-width*100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -103px;
+  }
+  
+  .offers__item {
+    width: 50%;
+  }
+  
+  .offers__item--icon-lump a {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 180px;
+  }
+  
+  .offers__item--icon-lego a {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 205px;
+  }
+  
+  .offers__item--icon-lump a {
+    padding-right: 250px;
+  }
+  
+  .offers__item--icon-lego a {
+    padding-right: 285px;
+  }
+  
+  .about-us__item--ecology {
+    order: 0;
+  }
+  .about-us__item--scandinavian {
+    order: 2;
+  }
+  .about-us__item--likes {
+    order: 4;
+  }
+  .about-us__item--handmade {
+    order: 1;
+  }
+  .about-us__item--domestic {
+    order: 3;
+  }
+  .about-us__item--pack {
+    order: 5;
+  }
 }
 
-.offers__icon-lego {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
+@media (min-width: @desktop-width) {
+  .offers__list {
+    max-width: 1050px;
+  }
+  
+  
 }

@@ -1,5 +1,5 @@
 .page-footer {
-  width: 320px;
+  min-width: 320px;
   padding-left: 30px;
   padding-right: 30px;
   display: flex;
@@ -7,4 +7,35 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f1f1f1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    min-height: 143px;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px
+  }
+  
+  .page-footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101.615px;
+    height: 34.056px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer { 
+    width: @desktop-width;
+    padding-left: 100px;
+    padding-right: 100px
+  }
 }

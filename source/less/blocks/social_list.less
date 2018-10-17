@@ -1,10 +1,13 @@
 .social-list {
   .default-list;
   width: 141px;
+  margin-left: auto;
+  margin-right: auto; 
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+
 }
 
 .social-list__item {
@@ -13,23 +16,18 @@
   justify-content: center;
   align-items: flex-end;
   cursor: pointer;
+  &:hover path,
+  &:focus path{
+    fill: #46c1ae;
+  }
+  &:active path {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .social-list__link {
   outline: none;
-}
-
-.social-list__item:hover path {
-  fill: #46c1ae;
-}
-
-.social-list__link:focus path {
-  fill: #46c1ae;
-}
-
-.social-list__item:active path {
-  fill: #46c1ae;
-  opacity: 0.3;
 }
 
 .social-list__link path {

@@ -1,7 +1,7 @@
 .copyright__link {
   .style-reset;
   height: 80px;
-  width: 260px;
+  min-width: 81%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,4 +13,11 @@
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link { 
+    border: none;
+    width: 200px;
+  }
 }

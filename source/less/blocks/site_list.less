@@ -34,3 +34,37 @@
 .site-list__item:active a {
   opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 334px; 
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .site-list__item {
+    .style-reset;
+    width: 167px;
+    border: none;
+  }
+ 
+  .site-list__item a{
+    .style-reset;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 410px; 
+    justify-content: flex-start;
+    &__item:nth-child(1) {
+      width: 185px;
+    }
+    &__item:nth-child(2) {
+      width: 200px;
+      border-left: 1px solid #ececec;
+      padding-left: 35px;
+      margin-right: auto;
+    }
+  }
+}
