@@ -1,6 +1,6 @@
 .contacts {
   min-width: 320px;
-  padding-top: 45px;
+  padding-top: 38px;
   padding-bottom: 39px;
 }
 
@@ -10,21 +10,29 @@
   font-size: 18px;
   color: #000000;
   margin: 0 auto;
-  margin-bottom: 41px;
+  margin-bottom: 24px;
 }
 
 .contacts__characteristics {
   .style-reset;
   width: 81%;
+  min-height: 205px;
   border-collapse: collapse;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 13px;
 }
 
 .contacts__characteristics-name {
   font: inherit;
   text-align: left;
   width: 30%;
+  vertical-align: top;
+}
+
+.contacts__characteristics-descript {
+  font: inherit;
+  text-align: left;
+  vertical-align: top;
 }
 
 .contacts__maps {
@@ -34,7 +42,7 @@
   background-image: url('../img/map-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: top center;
-  margin-bottom: 39px;
+  margin-bottom: 15px;
 }
 
 .contacts__button {
@@ -47,11 +55,11 @@
   .contacts__maps {
     background-image: url('../../img/map-desktop@1x.jpg');
   }
-  
+
   .contacts__characteristics-name {
     vertical-align: top;
   }
-  
+
   .contacts__characteristics br{
     display: none;
   }
@@ -111,16 +119,16 @@
     font-size: 17px;
     line-height: 30px;
   }
-  
+
   .contacts__characteristics-descript {
     font-size: 17px;
     line-height: 30px;
   }
-  
+
   .contacts__button {
     width: 30%;
     max-width: 370px;
-  } 
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -134,8 +142,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-  
+
   .contacts__container {
     display: block;
     width: 350px;
@@ -181,12 +188,12 @@
     text-align: left;
     width: 23%;
   }
-  
+
   .contacts__characteristics-descript {
     font-size: 17px;
     line-height: 30px;
   }
-  
+
   .contacts__maps {
     position:absolute;
     right: 0;
@@ -198,8 +205,8 @@
     background-position: top center;
     margin: 0;
   }
-  
-   .contacts__button {
+
+  .contacts__button {
     width: 230px;
   }
 }

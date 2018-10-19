@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 29px;
   padding-right: 30px;
 }
 
-.about-us__title { 
+.about-us__title {
   .style-reset;
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
   color: #000000;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
+  margin-right: auto;
   text-align: left;
   width: 90%;
   max-width: 370px;
@@ -22,9 +23,11 @@
   .default-list;
   display: flex;
   flex-direction: column;
+  min-width: 250px;
   width: 90%;
   max-width: 370px;
-  margin-bottom: 55px;
+  margin-right: auto;
+  margin-bottom: 35px;
 }
 
 .about-us__item {
@@ -33,73 +36,94 @@
   font-weight: 700;
   line-height: 20px;
   color: #000000;
-  padding-top: 80px;
+  padding-top: 60px;
+  margin-bottom: 21px;
 }
 
-.about-us__item--ecology::before {
-  position: absolute;
-  top: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-image: url("../img/icon-feature-flower.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.about-us__item--ecology {
+  padding-right: 55px;
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
-.about-us__item--scandinavian::before {
-  position: absolute;
-  top: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-image: url("../img/icon-feature-money.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.about-us__item--scandinavian {
+  padding-top: 61px;
+  padding-right: 30px;
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
-.about-us__item--likes::before {
-  position: absolute;
-  top: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-image: url("../img/icon-feature-heart.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.about-us__item--likes {
+  padding-top: 62px;
+  padding-right: 45px;
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: -5px;
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
-.about-us__item--handmade::before {
-  position: absolute;
-  top: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-image: url("../img/icon-feature-ball.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.about-us__item--handmade {
+  padding-top: 62px;
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: -8px;
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
-.about-us__item--domestic::before {
-  position: absolute;
-  top: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-image: url("../img/icon-feature-rocket.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.about-us__item--domestic {
+  padding-right: 0px;
+  padding-top: 63px;
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -7px;
+    content: "";
+    width: 60px;
+    height: 50px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 .about-us__item--pack::before {
   position: absolute;
-  top: 20px;
-  display: block;
+  top: -2px;
+  left: -9px;
   content: "";
   width: 60px;
   height: 50px;
@@ -115,7 +139,7 @@
     padding-right: 50px;
     padding-top: 7%;
   }
-  
+
   .about-us__title {
     min-width: 668px;
     max-width: 700px;
@@ -123,7 +147,7 @@
     line-height: 50px;
     margin-bottom: 45px;
   }
-  
+
   .about-us__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -131,36 +155,37 @@
     max-width: 700px;
     margin-bottom: 65px;
   }
-     
+
   .about-us__item {
     width: 50%;
+    margin-bottom: 5px;
   }
-  
-   .about-us__item--ecology {
+
+  .about-us__item--ecology {
     padding-right: 11%;
     order: 0;
   }
-  
+
   .about-us__item--scandinavian {
     padding-right: 11%;
     order: 2;
   }
-  
+
   .about-us__item--likes {
     padding-right: 11%;
     order: 4;
   }
-  
+
   .about-us__item--handmade {
     padding-right: 11%;
     order: 1;
   }
-  
+
   .about-us__item--domestic {
     padding-right: 5%;
     order: 3;
   }
-  
+
   .about-us__item--pack {
     padding-right: 11%;
     order: 5;
@@ -176,21 +201,21 @@
     padding-top: 80px;
     margin: 0 auto;
   }
-  
-   .about-us__title {
+
+  .about-us__title {
     min-width: 668px;
     max-width: 700px;
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 32px;
   }
-  
+
   .about-us__list {
     margin-bottom: 90px;
     margin-right: auto;
     margin-left: 175px;
   }
-     
+
   .about-us__item {
     width: 50%;
   }
