@@ -11,7 +11,7 @@
   <header class="page-header">
     <a class="page-header__logo">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img src="img/logo-mobile.svg" alt="Mishka" width="86px" height="35px" class="page-header__logo-image">
       </picture>
@@ -85,7 +85,11 @@
               <td class="top-product__properties-descript">15 см</td>
             </tr>
           </table>
-          <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260px" height="315px">
+          <picture class="top-product__image">
+            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки">
+          </picture>
           <p class="top-product__price">Цена: 990 руб.</p>
           <a href="#" class="button button--top-product">Заказать</a>
         </div>
@@ -100,33 +104,33 @@
           <li class="about-us__item about-us__item--domestic">Поддержка отечественного производителя</li>
           <li class="about-us__item about-us__item--pack">Поставляется в подарочной упаковке</li>
         </ul>
-        <article class="reviews">
-          <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="reviews__quote">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <div class="reviews__author-container">
-              <cite class="reviews__author">Анастасия Красильникова</cite>
-              <p class="reviews__author-email">@misssssiskras</p>
-            </div>
-          </blockquote>
-          <div class="reviews__slider-controls">
-            <button class="reviews__button reviews__button--left">Предыдущий</button>
-            <button class="reviews__button reviews__button--right">Следующий</button>
-          </div>
-          <a href="write-comments.html" class="reviews__button-write button button--reviews">Написать</a>
-        </article>
       </section>
+      <article class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <blockquote class="reviews__quote">
+        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <div class="reviews__author-container">
+          <cite class="reviews__author">Анастасия Красильникова</cite>
+          <p class="reviews__author-email">@misssssiskras</p>
+          </div>
+        </blockquote>
+        <div class="reviews__slider-controls">
+          <button class="reviews__button reviews__button--left">Предыдущий</button>
+          <button class="reviews__button reviews__button--right">Следующий</button>
+        </div>
+        <a href="write-comments.html" class="reviews__button-write button button--reviews">Написать</a>
+      </article>
       <section class="contacts">
         <div class="contacts__container">
           <h2 class="contacts__title">Контакты</h2>
           <table class="contacts__characteristics">
           <tr>
             <th class="contacts__characteristics-name">e-mail:</th>
-                <td class="contacts__characteristics-descript">info@mimimishkashop.ru</td>
+                <td class="contacts__characteristics-descript contacts__characteristics-descript--email">info@mimimishkashop.ru</td>
             </tr>
             <tr>
-              <th class="contacts__characteristics-name">адрес:</th>
-              <td class="contacts__characteristics-descript">г. Санкт-Петербург<br>
+              <th class="contacts__characteristics-name contacts__characteristics-name--adres">адрес:</th>
+              <td class="contacts__characteristics-descript contacts__characteristics-descript--adres">г. Санкт-Петербург<br>
                   ул. Большая Конюшенная,<br>
                   д. 19/8, офис 101</td>
               </tr>
@@ -186,11 +190,11 @@
             </a>
           </li>
         </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <b class="copyright__text">Разработано</b>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"><span>Разработано</span>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" fill="#63d1bb">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
         </a>
-      </div>
     </footer>
   </main>
   <script src="js/script.js"></script>

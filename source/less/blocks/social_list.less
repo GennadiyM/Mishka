@@ -1,13 +1,17 @@
 .social-list {
   .default-list;
-  width: 141px;
-  margin-left: auto;
-  margin-right: auto; 
-  height: 80px;
+  width: 78%;
+  max-width: 327px;
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  padding-top: 26px;
+  padding-bottom: 17px;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 .social-list__item {
@@ -32,4 +36,14 @@
 
 .social-list__link path {
   transition: all 0.3s;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    width: 141px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-height: auto;
+  }
 }

@@ -137,7 +137,7 @@
     min-width: @tablet-width;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 7%;
+    padding-top: 6.5%;
   }
 
   .about-us__title {
@@ -145,7 +145,10 @@
     max-width: 700px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 45px;
+    margin-bottom: 37px;
+    margin-left: -6px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-us__list {
@@ -153,16 +156,21 @@
     flex-wrap: wrap;
     min-width: 668px;
     max-width: 700px;
-    margin-bottom: 65px;
+    margin-bottom: 31px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-us__item {
     width: 50%;
-    margin-bottom: 5px;
+    margin-bottom: 47px;
+    font-size: 20px;
+    line-height: 24px;
   }
-
+  
   .about-us__item--ecology {
-    padding-right: 11%;
+    padding-right: 17%;
+    margin-top: 3px;
     order: 0;
   }
 
@@ -173,7 +181,11 @@
 
   .about-us__item--likes {
     padding-right: 11%;
+    margin-top: -4px;
     order: 4;
+    &::before {
+      top: 5px;
+    }
   }
 
   .about-us__item--handmade {
@@ -183,7 +195,11 @@
 
   .about-us__item--domestic {
     padding-right: 5%;
+    margin-top: -3px;
     order: 3;
+    &::before {
+      top: 1px;
+    }
   }
 
   .about-us__item--pack {
@@ -197,9 +213,10 @@
     min-width: auto;
     width: @desktop-width;
     padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 80px;
-    margin: 0 auto;
+    padding-right: 111px;
+    padding-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-us__title {
@@ -207,16 +224,24 @@
     max-width: 700px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 32px;
+    margin-bottom: 39px;
   }
 
   .about-us__list {
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     margin-right: auto;
     margin-left: 175px;
   }
 
   .about-us__item {
     width: 50%;
+  }
+  
+  .about-us__item--scandinavian {
+    padding-right: 13%;
+  }
+  
+  .about-us__item--likes {
+    padding-right: 16%;
   }
 }

@@ -83,12 +83,12 @@
     padding-left: 50px;
     &::after {
       position: absolute;
-      bottom: 0;
+      bottom: -9px;
       left: 0;
+      width: 100%;
       z-index: 2;
       content: "";
       display: block;
-      width: 100%;
       height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
@@ -139,6 +139,10 @@
     padding-right: 100px;
     margin-left: 0;
     margin-right: 0;
+    &::after {
+      bottom: -7px;
+      height: 30px;
+    }
   }
   
   .offers__list {
