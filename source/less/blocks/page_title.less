@@ -21,6 +21,7 @@
   &--catalog {
     min-height: 177px;
     background-color: #f1f1f1;
+    padding-top: 70px;
   }
 }
 
@@ -35,7 +36,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-title__container{
+  .page-title__container {
     margin-top: -88px;
     padding-right: 50px;
     padding-left: 50px;
@@ -45,8 +46,15 @@
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: center -2px;
     }
+    &--catalog {
+      min-height: 235px;
+      padding-top: 95px;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-repeat-x: repeat;
+      background-position: bottom center;
+    }
   }
-  
+
   .page-title {
     min-height: auto;
     font-size: 43px;
@@ -63,8 +71,11 @@
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center bottom;
     }
+  &--catalog {
+      min-height: 272px;
+    }
   }
-  
+
   .page-title {
     font-size: 53px;
     line-height: 57px;
