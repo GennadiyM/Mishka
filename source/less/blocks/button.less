@@ -24,6 +24,9 @@
 }
 
 .button--top-product {
+  align-self: center;
+  width: 100%;
+  max-width: 370px;
   border-color: #444444;
   font-size: 17px;
   font-weight: bold;
@@ -32,6 +35,8 @@
 }
 
 .button--reviews {
+  width: 100%;
+  max-width: 370px;
   border-color: #444444;
   font-size: 18px;
   font-weight: bold;
@@ -58,10 +63,19 @@
 }
 
 .button--advertising {
+  width: 74%;
   border-color: #444444;
   background-color: #ffffff;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   color: #444444;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: @tablet-width) {
+    width: 88%;
+  }
+  @media (min-width: @desktop-width) {
+    width: 231px;
+  }
 }

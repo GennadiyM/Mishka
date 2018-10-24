@@ -1,49 +1,162 @@
 .offers__list {
   .default-list;
-  width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #63d1bb;
 }
 
 .offers__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   min-height: 103px;
-  padding-left: 30px;
+  padding-top: 16px;
+  padding-left: 29px;
   padding-right: 27px;
-}
-
-.offers__item a {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #ffffff;
-  padding-right: 30px;
+  transition: all 0.2s;
+  &:hover{
+    min-height: 108px;
+    margin-top: -5px;
+  }
+  a {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: opacity 0.2s;
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .offers__item--icon-lump {
   background-color: #63d1bb;
+  a {
+    min-height: 62px;
+    padding-right: 55px;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 7px;
+      right: 0;
+      width: 60px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+    }
+  }
 }
 
 .offers__item--icon-lego {
   background-color: #56c3b2;
+  a {
+    min-height: 60px;
+    padding-right: 95px;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 6px;
+      right: 0;
+      width: 60px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+    }
+  }
 }
 
-.offers__icon-lump {
-  display: inline-block;
-  width: 60px;
-  height: 62px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
+@media (min-width: @tablet-width) {
+  .offers{
+    position: relative;
+    margin-top: -119px;
+    padding-right: 50px;
+    padding-left: 50px;
+    &::after {
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      content: "";
+      display: block;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat;
+      background-size: cover;
+    }
+  }
+
+  .offers__list {
+    z-index: 1;
+    min-width: 668px;
+    width: 668px/@tablet-width*100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .offers__item {
+    width: 50%;
+    min-height: 119px;
+    padding-top: 19px;
+    padding-left: 36px;
+    padding-right: 27px;
+    &:hover{
+    min-height: 124px;
+    margin-top: -5px;
+  }
+
+  }
+
+  .offers__item--icon-lump a {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 25%;
+  }
+
+  .offers__item--icon-lego a {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 35%;
+  }
 }
 
-.offers__icon-lego {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
+@media (min-width: @desktop-width) {
+  .offers {
+    min-width: @desktop-width;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    &::after {
+      bottom: -7px;
+      height: 30px;
+    }
+  }
+
+  .offers__list {
+    width: 1150px;
+    min-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .offers__item--icon-lump a {
+    padding-right: 250px;
+  }
+
+  .offers__item--icon-lego a {
+    padding-right: 285px;
+  }
 }

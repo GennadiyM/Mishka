@@ -1,8 +1,17 @@
 .product-card {
   border: 1px solid #ededed;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 374px;
+  min-width: 260px;
+  align-items: center;
+  &:hover .product-card__wrapper {
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  }
+  &:active .product-card__wrapper {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
 }
 
 .product-card__picture {
@@ -11,14 +20,25 @@
   background-color: #e3e1e0;
   width: 260px;
   height: 195px;
-  margin-left: -28px;
-  margin-bottom: 30px;
+  align-self: center;
+}
+
+.product-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 177px;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 27px;
 }
 
 .product-card__info {
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 28px;
-  margin-bottom: 28px;
+  padding-bottom: 19px;
+  width: 90%;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .product-card__title {
@@ -27,7 +47,7 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 
 .product-card__description {
@@ -37,21 +57,145 @@
 
 .product-card__price {
   .style-reset;
+  border-top: 1px solid #ededed;
+  width: 80%;
   position: relative;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  padding-top: 21px;
+  &::after {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    content: "";
+    width: 20px;
+    height: 19px;
+    background-image: url("../img/icon-cart.svg");
+    opacity: 0.2;
+  }
 }
 
-.product-card__price::after {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  content: "";
-  width: 20px;
-  height: 19px;
-  background-image: url("../img/icon-cart.svg");
-  opacity: 0.2;
+@media (min-width: @tablet-width) {
+  .product-card {
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 334px;
+  min-width: 668px;
+  align-items: flex-start;
+}
+
+.product-card__picture {
+  width: 334px;
+  min-width: 334px;
+  height: 334px;
+}
+
+  .product-card__wrapper {
+    justify-content: space-between;
+    min-height: auto;
+    height: 334px;
+    min-width: 334px;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    padding-left: 27px;
+    padding-right: 10px;
+    margin-left: auto;
+    flex-grow: 1;
+  }
+
+.product-card__info {
+  padding-bottom: 19px;
+  margin-bottom: 21px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.product-card__title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding-right: 57px;
+}
+  .product-card__description {
+    font-size: 15px;
+    padding-right: 10px;
+  }
+
+  .product-card__price {
+    width: 100%;
+    font-size: 17px;
+    padding-top: 24px;
+    padding-left: 6px;
+    &::after {
+      right: 22px;
+      top: 24px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card {
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 659px;
+  min-width: auto;
+}
+
+  .product-card__picture {
+    width: 315px;
+    height: 462px;
+    min-width: auto;
+  }
+
+  .product-card__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 197px;
+    width: 100%;
+    min-width: auto;
+    padding-top: 24px;
+    padding-bottom: 0px;
+    padding-left: 27px;
+    padding-right: 30px;
+    margin-left: 0;
+    flex-grow: 0;
+  }
+
+  .product-card__info {
+    padding-bottom: 0;
+    width: 100%;
+    min-height: 98px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-right: 15px;
+  }
+
+  .product-card__description {
+    font-size: 15px;
+    padding-right: 0;
+  }
+
+  .product-card__price {
+    .style-reset;
+    border-top: 1px solid #ededed;
+    width: 100%;
+    height: 74px;
+    position: relative;
+    font-size: 17px;
+    padding-top: 21px;
+    &::after {
+      right: 0;
+      top: 22px;
+    }
+  }
 }

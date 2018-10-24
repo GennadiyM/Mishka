@@ -1,8 +1,8 @@
 {
-  "name": "mishka",
-  "version": "15.0.0",
+  "name": "brand",
+  "version": "1.0.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект",
   "devDependencies": {
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",

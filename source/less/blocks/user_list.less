@@ -1,37 +1,56 @@
 .user-list {
   .default-list;
+  &--closed {
+  display: none;
+  }
 }
 
-.user-list__search,
-.user-list__cart {
+.user-list__search {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   min-height: 79px;
   border-top: 1px solid #ececec;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-svg {
-  margin-right: 26px;
-  opacity: 0.2;
+  padding: 16px 30px 10px 30px;
+  svg {
+    margin-bottom: -5px;
+    margin-right: 28px;
+    opacity: 0.2;
+    transition: opacity 0.2s;
+    path {
+      transition: all 0.2s;
+    }
+  }
 }
 
 .user-list__cart {
-  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: flex-start;
+  min-height: 79px;
+  border-top: 1px solid #ececec;
+  padding: 16px 30px 10px 30px;
+  svg {
+    margin-bottom: -2px;
+    margin-right: 24px;
+    opacity: 0.2;
+    transition: opacity 0.2s;
+    path {
+      transition: all 0.2s;
+    }
+  }
 }
 
 .user-list__search-link,
 .user-list__cart-link {
+  .style-reset;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   color: #000000;
-  transition: all 0.2s;
-  .style-reset;
-  padding: 10px;
+  transition: opacity 0.2s;
+  padding-top: 10px;
+  padding-bottom: 10px;
   outline: none;
+  transition: opacity 0.2s;
 }
 
 .user-list__search:hover .user-list__search-link,
@@ -63,4 +82,50 @@ svg {
 .user-list__search:active path,
 .user-list__cart:active path {
   fill: #63d1bb;
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    order: 1;
+    width: 348px;
+    display: flex;
+  }
+
+  .user-list__search-title{
+    font-size: 0;
+  }
+
+  .user-list__search {
+    width: 84px;
+  }
+
+  .user-list__cart {
+    width: 265px;
+    svg {
+      margin-right: 30px;
+    }
+  }
+
+  .user-list__search,
+  .user-list__cart {
+    min-height: 88px;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #ececec;
+    padding: 15px 0 0 30px;
+}
+
+  .user-list__search-link,
+  .user-list__cart-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    order: 3;
+    width: 410px;
+    justify-content: flex-end;
+  }
 }
