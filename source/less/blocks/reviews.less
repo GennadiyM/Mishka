@@ -102,7 +102,7 @@
   background-image: url("../img/icon-right-arrow.svg");
 }
 
-@media (min-width: @tablet-width){
+@media (min-width: @tablet-width) {
   .reviews {
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,7 +123,7 @@
     line-height: 50px;
     margin-bottom: 49px;
     order: 0;
-}
+  }
 
   .reviews__quote {
     position: relative;
@@ -137,7 +137,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 53px;
-}
+  }
 
   .reviews__author-container {
     .style-reset;
@@ -167,9 +167,6 @@
     margin-left: auto;
     max-width: none;
     margin-top: 15px;
-}
-  .reviews__button {
-    height: 40px;
   }
 
   .reviews__button-write {
@@ -181,17 +178,18 @@
   }
 
   .reviews__button {
+    height: 40px;
     min-width: auto;
     border: none;
     background-color: transparent;
   }
 }
 
-@media (min-width: @desktop-width){
+@media (min-width: @desktop-width) {
   .reviews {
     min-width: auto;
     min-height: auto;
-    width:  1050px;
+    width: 1050px;
     padding: 72px 0 119px 178px;
     margin-left: auto;
     margin-right: auto;
@@ -199,43 +197,24 @@
   }
 
   .reviews__title {
-    .style-reset;
-    width: 450px;
-    max-width: 450px;
     font-size: 53px;
-    font-weight: 700;
     line-height: 57px;
-    margin-bottom: 49px;
-    order: 0;
-  }
-
-  .reviews__quote {
-    position: relative;
-    order: 2;
   }
 
   .reviews__text {
-    max-width: none;
-    width: 100%;
     min-height: auto;
-    font-size: 17px;
     margin-bottom: 45px;
     margin-left: 6px;
     padding-right: 80px;
-}
+  }
 
   .reviews__author-container {
-    .style-reset;
-    position: absolute;
     left: 4px;
     bottom: -48px;
-    max-width: none;
-    width: 460px;
   }
 
   .reviews__author {
     .style-reset;
-    font-size: 18px;
   }
 
   .reviews__author-email {
@@ -245,28 +224,12 @@
   .reviews__slider-controls {
     .style-reset;
     width: 175px;
-    justify-content: flex-end;
-    order: 3;
     margin-left: auto;
     margin-right: -8px;
-  }
-
-  .reviews__button {
-    height: 40px;
   }
 
   .reviews__button-write {
-    width: 175px;
-    align-self: flex-start;
-    margin-left: auto;
     margin-right: -8px;
     margin-top: 6px;
-    order: 1;
-  }
-
-  .reviews__button {
-    min-width: auto;
-    border: none;
-    background-color: transparent;
   }
 }
