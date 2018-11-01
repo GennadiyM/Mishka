@@ -49,14 +49,10 @@
 }
 
 .form__type--radio {
-  padding-bottom: 16px;
-  margin-bottom: 21px;
   .form__title {
     margin-bottom: 23px;
   }
   .form__label {
-    padding-top: 10px;
-    margin-bottom: 8px;
     &::before {
       position: absolute;
       left: 0;
@@ -74,18 +70,18 @@
     &:last-child::before {
       top: 8px;
     }
+    padding-top: 10px;
+    margin-bottom: 8px;
   }
+  padding-bottom: 16px;
+  margin-bottom: 21px;
 }
 
 .form__type--checkbox {
-  padding-bottom: 3px;
-  margin-bottom: 5px;
   .form__title {
     margin-bottom: 23px;
   }
   .form__label {
-    padding-top: 2px;
-    margin-bottom: 22px;
     &::before {
       position: absolute;
       left: 0;
@@ -96,13 +92,14 @@
       height: 39px;
       border: 2px solid #444444;
     }
+    padding-top: 2px;
+    margin-bottom: 22px;
   }
+  padding-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .form__type--buyer {
-  padding-bottom: 3px;
-  margin-bottom: 16px;
-  width: 100%;
   .form__title {
     margin-bottom: 17px;
   }
@@ -114,12 +111,12 @@
   input {
     margin-bottom: 12px;
   }
+  padding-bottom: 3px;
+  margin-bottom: 16px;
+  width: 100%;
 }
 
 .form__type--tel {
-  width: 100%;
-  padding-bottom: 3px;
-  margin-bottom: 27px;
   .form__title {
     margin-bottom: 16px;
   }
@@ -128,12 +125,12 @@
     margin-bottom: 0;
     padding-left: 0;
   }
+  width: 100%;
+  padding-bottom: 3px;
+  margin-bottom: 27px;
 }
 
 .form__type--email {
-  width: 100%;
-  padding-bottom: 3px;
-  margin-bottom: 28px;
   .form__title {
     margin-bottom: 17px;
   }
@@ -142,6 +139,9 @@
     margin-bottom: 0;
     padding-left: 0;
   }
+  width: 100%;
+  padding-bottom: 3px;
+  margin-bottom: 28px;
 }
 
 .form__buyer-name,
@@ -178,9 +178,6 @@
 }
 
 .form__type--textarea {
-  padding-bottom: 3px;
-  margin-bottom: 4px;
-  width: 100%;
   .form__title {
     margin-bottom: 23px;
   }
@@ -189,6 +186,9 @@
     margin-bottom: 0;
     padding-left: 0;
   }
+  padding-bottom: 3px;
+  margin-bottom: 4px;
+  width: 100%;
 }
 
 .form__textarea {
@@ -289,15 +289,10 @@
   }
 
   .form__type--radio {
-    min-height: 141px;
-    padding-bottom: 0;
-    margin-bottom: 21px;
     .form__title {
       margin-bottom: 0;
     }
     .form__label {
-      padding-top: 0;
-      margin-bottom: 23px;
       &::before {
         width: 52px;
         height: 52px;
@@ -310,26 +305,27 @@
       &:last-child::before {
         top: 0;
       }
+      padding-top: 0;
+      margin-bottom: 23px;
     }
+    min-height: 141px;
+    padding-bottom: 0;
+    margin-bottom: 21px;
   }
 
   .form__type--checkbox {
-    background-color: #f1f1f1;
-    padding-top: 65px;
-    padding-bottom: 27px;
-    margin-bottom: 65px;
     .form__title {
       margin-bottom: 23px;
     }
     .form__label {
-      padding-top: 0;
-      margin-bottom: 24px;
-      min-width: 239px;
       &::before {
         top: 3px;
         width: 54px;
         height: 52px;
       }
+      padding-top: 0;
+      margin-bottom: 24px;
+      min-width: 239px;
     }
     .form__input-container {
       height: 230px;
@@ -354,11 +350,13 @@
     .form__label:nth-of-type(6) {
       order: 5;
     }
+    background-color: #f1f1f1;
+    padding-top: 65px;
+    padding-bottom: 27px;
+    margin-bottom: 65px;
   }
 
   .form__type--buyer {
-    padding-bottom: 0;
-    margin-bottom: 27px;
     .form__title {
       margin-bottom: 0;
     }
@@ -372,6 +370,8 @@
     input {
       margin-bottom: 0;
     }
+    padding-bottom: 0;
+    margin-bottom: 27px;
   }
 
   .form__buyer-container {
@@ -383,9 +383,6 @@
   }
 
   .form__type--tel {
-    background-color: #f1f1f1;
-    padding-bottom: 0;
-    margin-bottom: 0;
     .form__title {
       margin-bottom: 0;
       width: 228px;
@@ -395,12 +392,12 @@
       align-items: center;
       padding-top: 30px;
     }
+    background-color: #f1f1f1;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .form__type--email {
-    background-color: #f1f1f1;
-    padding-bottom: 0;
-    margin-bottom: 51px;
     .form__title {
       padding-top: 2px;
       margin-bottom: 0;
@@ -411,6 +408,9 @@
       align-items: flex-start;
       padding-top: 19px;
     }
+    background-color: #f1f1f1;
+    padding-bottom: 0;
+    margin-bottom: 51px;
   }
 
   .form__buyer-name,
@@ -449,13 +449,13 @@
   }
 
   .form__type--textarea {
-    padding-bottom: 0;
-    margin-bottom: 53px;
     .form__title {
       width: 228px;
       margin-bottom: 0;
       padding-top: 15px;
     }
+    padding-bottom: 0;
+    margin-bottom: 53px;
   }
 
   .form__note {
@@ -569,11 +569,11 @@
   }
 
   .form__type--textarea {
-    margin-bottom: 48px;
     .form__title {
       width: 114px;
       margin-left: 72px;
     }
+    margin-bottom: 48px;
   }
 
   .form__note {
