@@ -14,6 +14,27 @@
   justify-content: center;
   height: 79px;
   padding-top: 6px;
+  transition: opacity 0.5s;
+  :hover {
+    opacity: 0.6;
+  }
+  :focus {
+    opacity: 0.6;
+  }
+  :active {
+    opacity: 0.3;
+  }
+  &--index {
+    :hover {
+      opacity: 1;
+    }
+    :focus {
+      opacity: 1;
+    }
+    :active {
+      opacity: 1;
+    }
+  }
 }
 
 .page-header__logo img {

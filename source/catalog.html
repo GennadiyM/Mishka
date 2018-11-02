@@ -9,11 +9,11 @@
 </head>
 <body>
 <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img src="img/logo-mobile.svg" alt="Mishka" width="86px" height="35px" class="page-header__logo-image">
+        <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35" class="page-header__logo-image">
       </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -58,15 +58,16 @@
     </div>
     <div class="catalog">
       <section class="catalog__items">
+        <h2 class="visually-hidden">Каталог</h2>
         <article class="product-card catalog__item"> <a href="#" class="product-card__picture">
           <picture>
-            <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
-            <img src="img/photo-hare-mobile@1x.jpg" alt="зайчик попрыгайчик"> </picture>
+            <source media="(min-width: 1250px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+            <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="зайчик попрыгайчик"> </picture>
           </a>
           <div class="product-card__wrapper">
             <div class="product-card__info"> <a href="#">
-              <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
+              <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
               </a>
               <p class="product-card__description">Рост 30 см, вес 200 г</p>
             </div>
@@ -75,13 +76,13 @@
         </article>
         <article class="catalog__item product-card"> <a href="#" class="product-card__picture">
           <picture>
-            <source media="(min-width: 1250px)" srcset="img/photo-bowl-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-            <img src="img/photo-bowl-mobile@1x.jpg" alt="корзинка для белья" > </picture>
+            <source media="(min-width: 1250px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, mg/photo-bowl-tablet@2x.jpg 2x">
+            <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="корзинка для белья" > </picture>
           </a>
           <div class="product-card__wrapper">
             <div class="product-card__info"> <a href="#">
-              <h2 class="product-card__title">Корзинка для белья</h2>
+              <h3 class="product-card__title">Корзинка для белья</h3>
               </a>
               <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
             </div>
@@ -90,13 +91,13 @@
         </article>
         <article class="catalog__item product-card"> <a href="#" class="product-card__picture">
           <picture>
-            <source media="(min-width: 1250px)" srcset="img/photo-toys-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
-            <img src="img/photo-toys-mobile@1x.jpg" alt="большая корзинка для белья"> </picture>
+            <source media="(min-width: 1250px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+            <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="большая корзинка для белья"> </picture>
           </a>
           <div class="product-card__wrapper">
             <div class="product-card__info"> <a href="#">
-              <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+              <h3 class="product-card__title">Большая корзинка для игрушек</h3>
               </a>
               <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
             </div>
@@ -105,13 +106,13 @@
         </article>
       </section>
       <article class="advertising">
-        <h2 class="advertising__title">Процесс производства</h2>
+        <h3 class="advertising__title">Процесс производства</h3>
         <div class="advertising__video">
           <picture>
-            <source media="(min-width: 1250px)" srcset="img/video-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-            <img src="img/video-mobile@1x.jpg" alt="Производство корзинки" class="advertising__picture"> </picture>
-          <a href="#" class="advertising__play"> <img src="img/icon-play.svg" alt="Воспроизведение видео" width="101px" height="77px"> </a> </div>
+            <source media="(min-width: 1250px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Производство корзинки" class="advertising__picture"> </picture>
+          <a href="#" class="advertising__play"> <img src="img/icon-play.svg" alt="Воспроизведение видео" width="101" height="77"> </a> </div>
         <p class="advertising__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="#" class="button button--advertising">Сделать заказ</a> </article>
     </div>

@@ -1,6 +1,6 @@
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visual-hidden,
-input[type="radio"].visual-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -8,6 +8,8 @@ input[type="radio"].visual-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }

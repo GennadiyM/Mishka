@@ -14,6 +14,16 @@
 }
 
 .advertising__title {
+  &::before {
+    display: block;
+    width: 32px;
+    height: 27px;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 21px;
+    background-image: url("../img/icon-video.svg");
+  }
   .style-reset;
   position: relative;
   min-width: 233px;
@@ -26,16 +36,6 @@
   margin-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
-  &::before {
-    display: block;
-    width: 32px;
-    height: 27px;
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 21px;
-    background-image: url("../img/icon-video.svg");
-  }
 }
 
 .advertising__video {
@@ -58,11 +58,20 @@
 }
 
 .advertising__play {
+  :hover,
+  :focus {
+    transform: scale(1.2);
+  }
+  :active {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -42px;
   margin-left: -50px;
+  transition: all 0.3s;
 }
 
 @media (min-width: @tablet-width) {
@@ -76,6 +85,10 @@
   }
 
   .advertising__title {
+    &::before {
+      top: -5px;
+      left: 41px;
+    }
     min-width: auto;
     width: auto;
     font-size: 20px;
@@ -84,19 +97,15 @@
     margin-bottom: 32px;
     margin-left: 0;
     margin-right: 0;
-    &::before {
-      top: -5px;
-      left: 41px;
-    }
   }
 
   .advertising__video {
-    margin-bottom: 31px;
-    width: 100%;
-    order: -1;
     img {
       width: 100%;
     }
+    margin-bottom: 31px;
+    width: 100%;
+    order: -1;
   }
 
   .advertising__text {
@@ -125,6 +134,10 @@
   }
 
   .advertising__title {
+    &::before {
+      top: 38px;
+      left: 1px;
+    }
     min-width: auto;
     min-height: 48px;
     width: 231px;
@@ -132,20 +145,16 @@
     padding-left: 0;
     padding-top: 93px;
     margin-bottom: 32px;
-    &::before {
-      top: 38px;
-      left: 1px;
-    }
   }
 
   .advertising__video {
+    img {
+      width: 100%;
+    }
     margin-bottom: 0;
     width: 682px;
     height: 455px;
     max-height: 455px;
-    img {
-      width: 100%;
-    }
   }
 
   .advertising__text {
