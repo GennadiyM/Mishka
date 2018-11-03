@@ -1,5 +1,5 @@
 {
-  "name": "brand",
+  "name": "Miska",
   "version": "1.0.0",
   "private": true,
   "description": "Личный проект",
@@ -12,7 +12,9 @@
     "gulp-postcss": "8.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "9.6.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "gulp-rename": "1.4.x",
+    "gulp-csso": "3.0.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
