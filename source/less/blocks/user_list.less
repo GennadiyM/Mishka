@@ -15,10 +15,7 @@
     margin-bottom: -5px;
     margin-right: 28px;
     opacity: 0.2;
-    transition: opacity 0.2s;
-    path {
-      transition: all 0.2s;
-    }
+    transition: all 0.2s;
   }
 }
 
@@ -32,10 +29,7 @@
     margin-bottom: -2px;
     margin-right: 24px;
     opacity: 0.2;
-    transition: opacity 0.2s;
-    path {
-      transition: all 0.2s;
-    }
+    transition: all 0.2s;
   }
 }
 
@@ -71,15 +65,15 @@
   opacity: 1;
 }
 
-.user-list__search:hover path,
-.user-list__search-link:focus path,
-.user-list__cart:hover path,
-.user-list__cart-link:focus path {
+.user-list__search:hover svg,
+.user-list__search-link:focus svg,
+.user-list__cart:hover svg,
+.user-list__cart-link:focus svg {
   fill: #63d1bb;
 }
 
-.user-list__search:active path,
-.user-list__cart:active path {
+.user-list__search:active svg,
+.user-list__cart:active svg {
   fill: #63d1bb;
 }
 
@@ -96,12 +90,8 @@
 
   .user-list__search {
     width: 84px;
-  }
-
-  .user-list__cart {
-    width: 265px;
     svg {
-      margin-right: 30px;
+      margin-bottom: -2px;
     }
   }
 
