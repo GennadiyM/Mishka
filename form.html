@@ -62,17 +62,20 @@
   <div class="main-container">
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <div class="form__type form__type--radio form__type-container">
-          <h3 class="form__title">Тип</h3>
+      <fieldset class="form__type form__type--radio">
+        <div class="form__type-container">
+          <legend class="form__title">Тип</legend>
           <div class="form__input-container">
             <input class="visually-hidden form__input-radio" type="radio" id="accessories" name="product-type" tabindex="0" value="accessories" checked="">
             <label class="form__label" for="accessories">Аксессуар для интерьера</label>
             <input class="visually-hidden form__input-radio" type="radio" id="toys" name="product-type" value="accessories" tabindex="0">
             <label class="form__label" for="toys">Детская игрушка</label>
           </div>
-      </div>
-      <div class="form__type form__type--checkbox form__type-container">
-          <h3 class="form__title">Цвет</h3>
+        </div>
+      </fieldset>
+      <fieldset class="form__type form__type--checkbox">
+        <div class="form__type-container">
+          <legend class="form__title">Цвет</legend>
           <div class="form__input-container">
             <input class="visually-hidden form__input-checkbox" type="checkbox" id="white" name="white" tabindex="0" checked="">
             <label class="form__label" for="white">Белый</label>
@@ -87,9 +90,11 @@
             <input class="visually-hidden form__input-checkbox" type="checkbox" id="orange" name="orange" tabindex="0">
             <label class="form__label" for="orange">Оранжевый</label>
           </div>
-      </div>
-      <div class="form__type form__type--buyer form__type-container">
-          <h3 class="form__title">фио</h3>
+        </div>
+      </fieldset>
+      <fieldset class="form__type form__type--buyer">
+        <div class="form__type-container">
+          <legend class="form__title">фио</legend>
           <div class="form__input-container">
             <div class="form__buyer-container">
               <label class="form__label" for="name">Имя:</label>
@@ -105,18 +110,25 @@
             </div>
           </div>
         </div>
-      <div class="form__type form__type--tel form__type-container">
-          <h3 class="form__title">тел</h3>
+      </fieldset>
+      <fieldset class="form__type form__type--tel">
+        <div class="form__type-container">
+          <legend class="form__title">тел</legend>
           <input class="form__tel" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XXX XX XX*" required="">
         </div>
-      <div class="form__type form__type--email form__type-container">
-          <h3 class="form__title">e-mail</h3>
+      </fieldset>
+      <fieldset class="form__type form__type--email">
+        <div class="form__type-container">
+          <legend class="form__title">e-mail</legend>
           <input class="form__email" type="email" id="email" name="email" placeholder="Ваш Email*" required="">
         </div>
-      <div class="form__type form__type--textarea form__type-container">
-          <h3 class="form__title">доп</h3>
+      </fieldset>
+      <fieldset class="form__type form__type--textarea">
+        <div class="form__type-container">
+          <legend class="form__title">доп</legend>
           <textarea class="form__textarea" name="textarea" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
+      </fieldset>
       <p class="form__note">*Поля обязательны для заполнения</p>
       <button class="button button--form" type="submit">Отправить заказ</button>
     </form>
