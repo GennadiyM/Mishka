@@ -1,0 +1,83 @@
+.page-title-container {
+  .style-reset;
+  position: relative;
+  width: auto;
+  text-align: center;
+  border-top: 1px solid #ececec;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  &--index {
+    min-height: 283px;
+    padding-top: 71px;
+    background-color: #fafafa;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-position: center -20px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/hero-mobile@2x.jpg");
+        background-size: 575px auto;
+      }
+  }
+  &--form {
+    min-height: 177px;
+    background-color: #f1f1f1;
+    padding-top: 70px;
+  }
+  &--catalog {
+    min-height: 177px;
+    background-color: #f1f1f1;
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-title-container {
+    margin-top: -88px;
+    padding-right: 50px;
+    padding-left: 50px;
+    &--index {
+      height: 745px;
+      padding-top: 153px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: center -2px;
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: 1150px auto;
+      }
+    }
+    &--catalog {
+      min-height: 235px;
+      padding-top: 95px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-position: bottom center;
+    }
+    &--form {
+      min-height: 245px;
+      padding-top: 93px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-position: bottom center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title-container {
+    padding-right: 100px;
+    padding-left: 100px;
+    &--index {
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-position: center bottom;
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
+    }
+    &--catalog {
+      min-height: 272px;
+    }
+    &--form {
+      min-height: 272px;
+    }
+  }
+}
