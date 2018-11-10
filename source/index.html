@@ -149,14 +149,15 @@
         <a href="write-us.html" class="contacts__button button button--contacts">Напишите нам</a>
       </div>
     </section>
-    <footer class="page-footer">
+  </main>
+  <footer class="page-footer">
     <a class="page-footer__logo">
       <svg width="101.615px" height="34.056px"><use xlink:href="#sprite-logo-footer"></use></svg>
     </a>
     <ul class="page-footer__social social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграмм">
-            <svg width="21.769" height="21.334"><use xlink:href="#sprite-icon-insta"></use></svg>
+          <svg width="21.769" height="21.334"><use xlink:href="#sprite-icon-insta"></use></svg>
         </a>
       </li>
       <li class="social-list__item">
@@ -174,22 +175,22 @@
       <svg width="27px" height="34px"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
     </a>
   </footer>
-    <section class="modal-basket">
-      <h2 class="modal-basket__title">Добавить в корзину</h2>
-      <form action="https://echo.htmlacademy.ru" method="get" class="modal-basket__form">
-        <p class="modal-basket__text">Выберите размер</p>
-        <div class="modal-basket__container">
-          <input class="visually-hidden modal-basket__input" type="radio" name="size" id="s" value="s" checked>
-          <label class="modal-basket__label" for="s" tabindex="0">s</label>
-          <input class="visually-hidden modal-basket__input" type="radio" name="size" id="m" value="m">
-          <label class="modal-basket__label" for="m" tabindex="0">m</label>
-          <input class="visually-hidden modal-basket__input" type="radio" name="size" id="l" value="l">
-          <label class="modal-basket__label" for="l" tabindex="0">l</label>
-        </div>
-        <button class="button button--modal" type="submit">Добавить</button>
-      </form>
-    </section>
-  </main>
+  <div class="overlay"></div>
+  <section class="modal-basket modal-basket--show">
+    <h2 class="modal-basket__title">Добавить в корзину</h2>
+    <form action="https://echo.htmlacademy.ru" method="get" class="modal-basket__form">
+      <p class="modal-basket__text">Выберите размер</p>
+      <div class="modal-basket__container">
+        <input class="visually-hidden modal-basket__input" type="radio" name="size" id="s" value="s" checked>
+        <label class="modal-basket__label" for="s" tabindex="0">s</label>
+        <input class="visually-hidden modal-basket__input" type="radio" name="size" id="m" value="m">
+        <label class="modal-basket__label" for="m" tabindex="0">m</label>
+        <input class="visually-hidden modal-basket__input" type="radio" name="size" id="l" value="l">
+        <label class="modal-basket__label" for="l" tabindex="0">l</label>
+      </div>
+      <button class="button button--modal" type="submit">Добавить</button>
+    </form>
+  </section>
   <script src="js/script.js"></script>
 </body>
 </html>

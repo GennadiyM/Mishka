@@ -56,7 +56,7 @@
     </ul>
     <p class="page-header__promo">Бесплатная доставка по России</p>
   </header>
-<main>
+  <main>
   <div class="main-container">
     <div class="page-title-container page-title-container--catalog">
       <h1 class="page-title">Каталог товаров</h1>
@@ -137,8 +137,9 @@
         <p class="advertising__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="#" class="button button--advertising">Сделать заказ</a> </article>
     </div>
-  </div>
-   <footer class="page-footer">
+  </div> 
+  </main>
+  <footer class="page-footer">
     <a class="page-footer__logo">
       <svg width="101.615px" height="34.056px"><use xlink:href="#sprite-logo-footer"></use></svg>
     </a>
@@ -163,7 +164,22 @@
       <svg width="27px" height="34px"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
     </a>
   </footer>
-</main>
+  <div class="overlay"></div>
+  <section class="modal-basket modal-basket--show">
+    <h2 class="modal-basket__title">Добавить в корзину</h2>
+    <form action="https://echo.htmlacademy.ru" method="get" class="modal-basket__form">
+      <p class="modal-basket__text">Выберите размер</p>
+      <div class="modal-basket__container">
+        <input class="visually-hidden modal-basket__input" type="radio" name="size" id="s" value="s" checked>
+        <label class="modal-basket__label" for="s" tabindex="0">s</label>
+        <input class="visually-hidden modal-basket__input" type="radio" name="size" id="m" value="m">
+        <label class="modal-basket__label" for="m" tabindex="0">m</label>
+        <input class="visually-hidden modal-basket__input" type="radio" name="size" id="l" value="l">
+        <label class="modal-basket__label" for="l" tabindex="0">l</label>
+      </div>
+      <button class="button button--modal" type="submit">Добавить</button>
+    </form>
+  </section>
 <script src="js/script.js"></script>
 </body>
 </html>
