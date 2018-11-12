@@ -53,7 +53,7 @@
       background-position: bottom center;
     }
     &--form {
-      min-height: 245px;
+      min-height: 236px;
       padding-top: 93px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: contain;
@@ -62,22 +62,32 @@
   }
 }
 
+@media (min-width: @desktop-internal-width) {
+  .page-title-container {
+    &--catalog {
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-top: 93px;
+      min-height: 272px;
+    }
+    &--form {
+      padding-right: 50px;
+      padding-left: 50px;
+      min-height: 272px;
+    }
+  }
+}
+
 @media (min-width: @desktop-width) {
   .page-title-container {
-    padding-right: 100px;
-    padding-left: 100px;
     &--index {
+      padding-right: 100px;
+      padding-left: 100px;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position: center bottom;
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
       }
-    }
-    &--catalog {
-      min-height: 272px;
-    }
-    &--form {
-      min-height: 272px;
     }
   }
 }
