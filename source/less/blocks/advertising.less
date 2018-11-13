@@ -56,20 +56,22 @@
 }
 
 .advertising__play {
-  :hover,
-  :focus {
-    transform: scale(1.2);
-  }
-  :active {
-    transform: scale(0.8);
-    opacity: 0.7;
-  }
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -42px;
   margin-left: -50px;
   transition: all 0.3s;
+}
+
+.advertising__play:hover,
+.advertising__play:focus {
+  transform: scale(1.2);
+}
+
+.advertising__play:active {
+  transform: scale(0.8);
+  opacity: 0.7;
 }
 
 @media (min-width: @tablet-width) {
@@ -116,7 +118,7 @@
   }
 }
 
-@media (min-width: @desktop-internal-width) {
+@media (min-width: @desktop-width) {
   .advertising {
     min-height: auto;
     max-width: none;

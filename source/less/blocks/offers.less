@@ -1,18 +1,20 @@
 .offers__list {
   .default-list;
   min-width: 320px;
+  width: 100%;
   margin: 0 auto;
-//  background-color: #63d1bb;
+}
+
+.offers__item a:hover {
+  min-height: 108px;
+  margin-top: -5px;
+}
+
+.offers__item a:active {
+  opacity: 0.3;
 }
 
 .offers__item a {
-  &:hover {
-    min-height: 108px;
-    margin-top: -5px;
-  }
-  &:active {
-    opacity: 0.3;
-  }
   width: 100%;
   min-height: 103px;
   padding-top: 25px;
@@ -26,11 +28,9 @@
   line-height: 24px;
   color: #ffffff;
   padding-bottom: 10px;
-  transition: opacity 0.2s;
 }
 
 .offers__item--icon-lump a {
-  background-color: #63d1bb;
   &::after {
     content: "";
     position: absolute;
@@ -44,10 +44,10 @@
     background-position: center;
     opacity: 0.5;
   }
+  background-color: #63d1bb;
 }
 
 .offers__item--icon-lego a {
-  background-color: #56c3b2;
   &::after {
     content: "";
     position: absolute;
@@ -61,34 +61,33 @@
     background-position: center;
     opacity: 0.5;
   }
+  background-color: #56c3b2;
 }
 
 @media (min-width: @tablet-width) {
   .offers {
-    position: relative;
-    margin-top: -119px;
-    padding-right: 50px;
-    padding-left: 50px;
     &::after {
       position: absolute;
-      bottom: -13px;
+      bottom: 0;
       left: 0;
       width: 100%;
       z-index: 2;
       content: "";
       display: block;
-      height: 24px;
+      height: 23px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
       background-size: cover;
     }
+    position: relative;
+    margin-top: -119px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   .offers__list {
     z-index: 1;
     min-width: 668px;
-    width: 668px/@tablet-width*100%;
-    max-width: 1050px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -99,13 +98,13 @@
   }
 
   .offers__item a {
-    min-height: 119px;
-    padding-top: 29px;
-    padding-left: 35px;
     &:hover {
       min-height: 124px;
       margin-top: -5px;
     }
+    min-height: 132px;
+    padding-top: 29px;
+    padding-left: 35px;
   }
 
   .offers__item--icon-lump a {
@@ -131,21 +130,22 @@
 
 @media (min-width: @desktop-width) {
   .offers {
-    min-width: @desktop-width;
-    padding-left: 100px;
-    padding-right: 100px;
+    &::after {
+      height: 37px;
+    }
     margin-left: 0;
     margin-right: 0;
-    &::after {
-      height: 30px;
-    }
   }
 
   .offers__list {
-    width: 1150px;
+    width: 1050px;
     min-width: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .offers__list a {
+    min-height: 140px;
   }
 
   .offers__item--icon-lump a {
@@ -154,5 +154,23 @@
 
   .offers__item--icon-lego a {
     padding-right: 305px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .offers::after {
+    height: 39px;
+  }
+}
+
+@media (min-width: 1575px) {
+  .offers::after {
+    height: 43px;
+  }
+}
+
+@media (min-width: 1830px) {
+  .offers::after {
+    height: 48px;
   }
 }

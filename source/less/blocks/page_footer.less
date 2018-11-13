@@ -21,8 +21,7 @@
   padding-top: 26px;
   margin: 0 auto;
   min-height: 80px;
-  width: 71%;
-  max-width: 261px;
+  width: 182px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -31,24 +30,27 @@
   color: #000000;
   font-weight: bold;
   transition: fill 0.2s;
-  svg {
-    fill: #63d1bb;
-    margin-top: -4px;
-    transition: all 0.2s;
-  }
-  &:hover svg,
-  &:focus svg {
-    fill: #46c1ae;
-  }
-  &:active {
-    opacity: 0.3;
-  }
+}
+
+.page-footer__copyright svg {
+  fill: #63d1bb;
+  margin-top: -4px;
+  transition: all 0.2s;
+}
+
+.page-footer__copyright:hover svg,
+.page-footer__copyright:focus svg {
+  fill: #46c1ae;
+}
+
+.page-footer__copyright:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     min-height: 143px;
-    min-width: none;
+    min-width: auto;
     padding-left: 50px;
     padding-right: 33px;
     padding-top: 59px;
@@ -56,6 +58,9 @@
 
   .page-footer__wrapper {
     flex-direction: row;
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page-footer__logo {
@@ -70,7 +75,6 @@
 
   .page-footer__copyright {
     padding-top: 3px;
-    width: 182px;
     min-height: auto;
     margin: 0;
   }
@@ -78,12 +82,10 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    margin-top: 49px;
+    margin-top: 48px;
   }
 
   .page-footer__wrapper {
     width: 1046px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

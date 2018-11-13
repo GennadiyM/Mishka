@@ -6,12 +6,14 @@
   min-height: 374px;
   width: 260px;
   align-items: center;
-  &:hover .product-card__wrapper {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-  &:active .product-card__wrapper {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  }
+}
+
+.product-card:hover .product-card__wrapper {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:active .product-card__wrapper {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-card__picture {
@@ -56,15 +58,6 @@
 }
 
 .product-card__price {
-  .style-reset;
-  border-top: 1px solid #ededed;
-  width: 80%;
-  position: relative;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  padding-top: 21px;
   &::after {
     display: block;
     position: absolute;
@@ -76,6 +69,15 @@
     background-image: url("../img/sprite-icon-cart.svg");
     opacity: 0.2;
   }
+  .style-reset;
+  border-top: 1px solid #ededed;
+  width: 80%;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  padding-top: 21px;
 }
 
 @media (min-width: @tablet-width) {
@@ -119,24 +121,25 @@
     margin-bottom: 5px;
     padding-right: 57px;
   }
+
   .product-card__description {
     font-size: 15px;
     padding-right: 10px;
   }
 
   .product-card__price {
-    width: 100%;
-    font-size: 17px;
-    padding-top: 24px;
-    padding-left: 6px;
     &::after {
       right: 22px;
       top: 24px;
     }
+    width: 100%;
+    font-size: 17px;
+    padding-top: 24px;
+    padding-left: 6px;
   }
 }
 
-@media (min-width: @desktop-internal-width) {
+@media (min-width: @desktop-width) {
   .product-card {
     flex-direction: column;
     justify-content: flex-start;
@@ -186,6 +189,10 @@
   }
 
   .product-card__price {
+    &::after {
+      right: 0;
+      top: 22px;
+    }
     .style-reset;
     border-top: 1px solid #ededed;
     width: 100%;
@@ -193,9 +200,5 @@
     position: relative;
     font-size: 17px;
     padding-top: 21px;
-    &::after {
-      right: 0;
-      top: 22px;
-    }
   }
 }

@@ -62,13 +62,6 @@
   color: #444444;
   margin-left: auto;
   margin-right: auto;
-  @media (min-width: @tablet-width) {
-    margin-left: 50px;
-    width: 230px;
-  }
-  @media (min-width: @desktop-internal-width) {
-    margin-left: 226px;
-  }
 }
 
 .button--advertising {
@@ -81,12 +74,6 @@
   color: #444444;
   margin-left: auto;
   margin-right: auto;
-  @media (min-width: @tablet-width) {
-    width: 88%;
-  }
-  @media (min-width: @desktop-internal-width) {
-    width: 231px;
-  }
 }
 
 .button--modal {
@@ -99,4 +86,25 @@
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .button--form {
+    margin-left: 50px;
+    width: 230px;
+  }
+
+  .button--advertising {
+    width: 88%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--form {
+    margin-left: 226px;
+  }
+
+  .button--advertising {
+    width: 231px;
+  }
 }

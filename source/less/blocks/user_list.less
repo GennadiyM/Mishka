@@ -1,8 +1,16 @@
 .user-list {
-  &--closed {
-    display: none;
-  }
   .default-list;
+}
+
+.user-list--closed {
+  display: none;
+}
+
+.user-list__search svg {
+  margin-bottom: -5px;
+  margin-right: 23px;
+  opacity: 0.2;
+  transition: all 0.2s;
 }
 
 .user-list__search {
@@ -11,12 +19,6 @@
   min-height: 79px;
   border-top: 1px solid #ececec;
   padding: 16px 30px 10px 30px;
-  svg {
-    margin-bottom: -5px;
-    margin-right: 28px;
-    opacity: 0.2;
-    transition: all 0.2s;
-  }
 }
 
 .user-list__cart {
@@ -25,12 +27,13 @@
   min-height: 79px;
   border-top: 1px solid #ececec;
   padding: 16px 30px 10px 30px;
-  svg {
-    margin-bottom: -2px;
-    margin-right: 24px;
-    opacity: 0.2;
-    transition: all 0.2s;
-  }
+}
+
+.user-list__cart svg {
+  margin-bottom: -2px;
+  margin-right: 24px;
+  opacity: 0.2;
+  transition: all 0.2s;
 }
 
 .user-list__search-link,
@@ -62,15 +65,10 @@
 .user-list__search-link:focus svg,
 .user-list__cart:hover svg,
 .user-list__cart-link:focus svg {
+  fill: #63d1bb;
   opacity: 1;
 }
 
-.user-list__search:hover svg,
-.user-list__search-link:focus svg,
-.user-list__cart:hover svg,
-.user-list__cart-link:focus svg {
-  fill: #63d1bb;
-}
 
 .user-list__search:active svg,
 .user-list__cart:active svg {
@@ -95,9 +93,10 @@
     border-bottom: none;
     border-left: 1px solid #ececec;
     padding: 32px 0 0 30px;
-    svg {
-      margin-right: 30px;
-    }
+  }
+
+  .user-list__cart svg {
+    margin-right: 30px;
   }
 
   .user-list__search {
@@ -115,7 +114,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: 1150px) {
   .user-list {
     order: 3;
     width: 410px;

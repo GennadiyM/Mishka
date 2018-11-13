@@ -20,6 +20,7 @@
     "gulp-svgstore": "^7.0.0",
     "gulp-uglify": "^3.0.1",
     "gulp-webp": "^3.0.0",
+    "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
     "pump": "^3.0.0",
     "stylelint": "9.6.x",
