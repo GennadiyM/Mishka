@@ -1881,7 +1881,7 @@ input[type="radio"].visually-hidden {
           align-items: center;
   min-width: 320px;
   max-width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   margin-right: auto;
   padding-right: 30px;
   padding-left: 30px;
@@ -2131,7 +2131,7 @@ input[type="radio"].visually-hidden {
 }
 .contacts {
   min-width: 320px;
-  padding-top: 36px;
+  padding-top: 41px;
   padding-bottom: 39px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
@@ -2628,6 +2628,8 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #000000;
   padding-left: 62px;
+  outline: none;
+  cursor: pointer;
 }
 .form__type--radio .form__title {
   margin-bottom: 23px;
@@ -2669,6 +2671,15 @@ input[type="radio"].visually-hidden {
   -webkit-box-shadow: 0 0 0 10px #ffffff, 0 0 0 12px #444444;
           box-shadow: 0 0 0 10px #ffffff, 0 0 0 12px #444444;
 }
+.form__input-radio:checked + label:hover::before,
+.form__input-radio:checked + label:focus::before {
+  -webkit-box-shadow: 0 0 0 10px #ffffff, 0 0 0 12px #62d1ba;
+          box-shadow: 0 0 0 10px #ffffff, 0 0 0 12px #62d1ba;
+}
+.form__type--radio .form__label:hover::before,
+.form__type--radio .form__label:focus::before {
+  border-color: #62d1ba;
+}
 .form__type--checkbox .form__title {
   margin-bottom: 23px;
 }
@@ -2694,6 +2705,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.form__type--checkbox .form__label:hover::before,
+.form__type--checkbox .form__label:focus::before {
+  border-color: #62d1ba;
 }
 .form__type--buyer .form__title {
   margin-bottom: 17px;
@@ -2978,6 +2993,10 @@ input[type="radio"].visually-hidden {
   .form__email {
     background-position: 95% -2px;
     padding-top: 0;
+    padding-left: 17px;
+    padding-bottom: 17px;
+    font-size: 19px;
+    line-height: 20px;
   }
   .form__tel {
     background-position: 95% 13px;
@@ -2995,6 +3014,15 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     -webkit-box-shadow: 0 0 0 13px #ffffff, 0 0 0 15px #444444;
             box-shadow: 0 0 0 13px #ffffff, 0 0 0 15px #444444;
+  }
+  .form__input-radio:checked + label:hover::before,
+  .form__input-radio:checked + label:focus::before {
+    -webkit-box-shadow: 0 0 0 13px #ffffff, 0 0 0 15px #62d1ba;
+            box-shadow: 0 0 0 13px #ffffff, 0 0 0 15px #62d1ba;
+  }
+  .form__type--radio .form__label:hover::before,
+  .form__type--radio .form__label:focus::before {
+    border-color: #62d1ba;
   }
   .form__type--checkbox .form__title {
     margin-bottom: 23px;
@@ -3121,8 +3149,7 @@ input[type="radio"].visually-hidden {
   .form__buyer-name,
   .form__buyer-firstname,
   .form__buyer-lastname,
-  .form__tel,
-  .form__email {
+  .form__tel {
     padding-left: 17px;
     padding-top: 14px;
     padding-bottom: 17px;
