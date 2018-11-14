@@ -152,7 +152,7 @@
     max-width: none;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 37px;
+    margin-bottom: 42px;
     margin-left: auto;
     padding-left: 6px;
   }
@@ -162,7 +162,7 @@
     flex-wrap: wrap;
     width: 668px;
     padding-left: 9px;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
     margin-left: auto;
     margin-right: auto;
     min-height: 450px;
@@ -176,45 +176,56 @@
   }
 
   .about-us__item--ecology {
+	  &::before {
+		top: 0;
+	}
     padding-right: 17%;
-    margin-top: 3px;
     order: 0;
+	  padding-top: 60px;
   }
 
   .about-us__item--scandinavian {
     padding-right: 11%;
     order: 2;
+	  padding-top: 60px;
   }
 
   .about-us__item--likes {
-    &::before {
-      top: 5px;
-    }
     padding-right: 15%;
-    margin-top: -4px;
     order: 4;
+	  padding-top: 60px;
   }
 
   .about-us__item--handmade {
+	  &::before {
+		top: 4px;
+		left: -4px;
+	}
     padding-right: 25px;
     order: 1;
     padding-left: 6px;
-    margin-top: 2px;
+	  padding-top: 60px;
   }
 
   .about-us__item--domestic {
-    &::before {
-      top: 1px;
-    }
-    margin-top: -2px;
+	  &::before {
+		top: -2px;
+		left: -4px;
+	}
     order: 3;
     padding-left: 6px;
+	  padding-top: 60px;
   }
 
   .about-us__item--pack {
+	&::before {
+		top: 1px;
+		left: -6px;
+	}
     padding-right: 11%;
     order: 5;
     padding-left: 6px;
+	  padding-top: 60px;
   }
 }
 
@@ -238,19 +249,18 @@
   .about-us__list {
     width: 702px;
     padding-left: 10px;
-    margin-bottom: 43px;
+    margin-bottom: 36px;
     margin-right: auto;
     margin-left: 175px;
   }
 
   .about-us__item {
-    margin-bottom: 44px;
+    margin-bottom: 49px;
   }
 
   .about-us__item--handmade {
     padding-right: 50px;
     padding-left: 4px;
-    margin-top: -1px;
   }
 
   .about-us__item--domestic {
@@ -260,7 +270,7 @@
 
   .about-us__item--pack {
     padding-left: 4px;
-    margin-top: 3px;
+	  padding-top: 58px;
   }
 
   .about-us__item--scandinavian {
@@ -269,6 +279,7 @@
 
   .about-us__item--likes {
     padding-right: 16%;
+	  padding-top: 58px;
     margin-top: 0;
   }
 }
