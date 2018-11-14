@@ -192,6 +192,25 @@
   transition: border 0.1s;
 }
 
+.form__email {
+	background-image: url("../img/icon-mail.svg");
+	background-repeat: no-repeat;
+	 background-position: 98% -5px;
+}
+.form__tel {
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+	 background-position: 96% -3px;
+}
+  .form__type--buyer label[for="name"] {
+	  padding-left: 0;
+  }
+
+  .form__type--buyer label[for="family"],
+  .form__type--buyer label[for="patronymic"] {
+	  padding-left: 0;
+  }
+
 .form__buyer-name::placeholder,
 .form__buyer-firstname::placeholder,
 .form__buyer-lastname::placeholder,
@@ -269,7 +288,7 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    padding-top: 60px;
+    padding-top: 63px;
     padding-bottom: 50px;
     padding-left: 0;
     padding-right: 0;
@@ -283,7 +302,7 @@
     line-height: 30px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 75px;
+    margin-bottom: 71px;
   }
 
   .form__type {
@@ -342,9 +361,15 @@
   .form__type--radio {
     min-height: 141px;
     padding-bottom: 0;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 
+.form__email {
+	 background-position: 95% -2px;
+}
+.form__tel {
+	 background-position: 95% 13px;
+}
   .form__input-radio:checked + label::before {
     position: absolute;
     left: 15px;
@@ -418,11 +443,13 @@
 
   .form__type--buyer label[for="name"] {
     width: 85px;
+	  padding-left: 0;
   }
 
   .form__type--buyer label[for="family"],
   .form__type--buyer label[for="patronymic"] {
     width: 169px;
+	  padding-left: 0;
   }
 
   .form__type--buyer input {
@@ -539,7 +566,7 @@
 @media (min-width: @desktop-width) {
   .form {
     padding-top: 103px;
-    padding-bottom: 48px;
+    padding-bottom: 0;
     width: 1150px;
   }
 
@@ -547,6 +574,7 @@
     padding-left: 0;
     margin-left: 225px;
     margin-right: 191px;
+    margin-bottom: 74px;
   }
 
   .form__type-container {
@@ -605,7 +633,9 @@
   .form__type--checkbox .form__label:nth-of-type(6) {
     order: 5;
   }
-
+	.form__type--checkbox {
+    margin-bottom: 65px;
+	}
   .form__type--buyer {
     .form__title {
       margin-bottom: 0;
@@ -632,11 +662,13 @@
 
   .form__type--buyer label[for="name"] {
     width: 81px;
+	  padding-left: 0;
   }
 
   .form__type--buyer label[for="family"],
   .form__type--buyer label[for="patronymic"] {
     width: 156px;
+	  padding-left: 0;
   }
 
   .form__buyer-name,
@@ -662,4 +694,10 @@
   .form__note {
     margin-right: 224px;
   }
+	.form__email {
+	 background-position: 99% -2px;
+}
+.form__tel {
+	 background-position: 99% 13px;
+}
 }
