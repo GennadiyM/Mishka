@@ -879,6 +879,7 @@ input[type="radio"].visually-hidden {
   }
   .site-list__item:nth-child(1) {
     width: 185px;
+    padding-top: 21px;
   }
   .site-list__item:nth-child(2) {
     width: 200px;
@@ -1211,6 +1212,7 @@ input[type="radio"].visually-hidden {
   }
   .offers::after {
     height: 37px;
+    background-position: 10px 0;
   }
   .offers__list {
     width: 1050px;
@@ -1364,7 +1366,7 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: 17px bottom;
     background-size: contain;
     padding: 33px 50px 70px 48px;
   }
@@ -1426,6 +1428,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 96px;
     margin: 0 auto;
     background-size: 1050px;
+    background-position: center bottom;
   }
   .top-product__title {
     width: 838px;
@@ -1592,7 +1595,7 @@ input[type="radio"].visually-hidden {
   max-width: 536px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 5px top;
   background-size: contain;
 }
 .about-us__title {
@@ -2135,7 +2138,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 39px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 5px top;
   background-size: contain;
 }
 .contacts__title {
@@ -2209,10 +2212,7 @@ input[type="radio"].visually-hidden {
     min-width: auto;
     padding-top: 0;
     padding-bottom: 0;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
+    background-position: 15px top;
   }
   .contacts__characteristics br {
     display: block;
